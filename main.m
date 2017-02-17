@@ -14,6 +14,12 @@ if exist('/N/u/hayashis/BigRed2/git', 'dir') == 7
     addpath(genpath('/N/u/hayashis/BigRed2/git/jsonlab'))
 end
 
+if exist('/root/git', 'dir') == 7
+    disp('loading jetstream paths')
+    addpath(genpath('/root/git/vistasoft'))
+    addpath(genpath('/root/git/jsonlab'))
+end
+
 % load my own config.json
 config = loadjson('config.json');
 
