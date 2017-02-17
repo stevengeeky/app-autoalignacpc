@@ -8,9 +8,11 @@ function main( config )
 %
 % Copyright 2017 Franco Pestilli, Indiana University, frakkopesto@gmail.com
 
-disp('loading paths')
-addpath(genpath('/N/u/hayashis/BigRed2/git/vistasoft'))
-addpath(genpath('/N/u/hayashis/BigRed2/git/jsonlab'))
+if exist('/N/u/hayashis/BigRed2/git', 'dir') == 7
+    disp('loading karst/br2 paths')
+    addpath(genpath('/N/u/hayashis/BigRed2/git/vistasoft'))
+    addpath(genpath('/N/u/hayashis/BigRed2/git/jsonlab'))
+end
 
 % load my own config.json
 config = loadjson('config.json');
