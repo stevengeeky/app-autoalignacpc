@@ -3,7 +3,8 @@ rm products.json
 rm sca-autoalignacpc*
 rm finished
 rm jobid
-#rm sca-service-life.*
+rm t1_acpc_aligned.nii.gz
+rm sca-service-alignacpc*
 #rm finished
 #rm jobid*
 #rm final_jobid
