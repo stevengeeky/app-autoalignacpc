@@ -4,7 +4,7 @@ rm sca-autoalignacpc*
 rm finished
 rm jobid
 rm t1_acpc_aligned.nii.gz
-rm sca-service-alignacpc*
+rm sca-alignacpc.*
 #rm finished
 #rm jobid*
 #rm final_jobid

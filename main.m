@@ -3,7 +3,6 @@ function main( config )
 % 
 % INPUTS:
 %  config.t1 - full path to nifti file that needs to be aligned
-%  config.t1_out - string used as name for the AC-PC aligned file 
 %  config.coords - [0,0,0; 0,-16,0; 0,-8,40]
 %
 % Copyright 2017 Franco Pestilli, Indiana University, frakkopesto@gmail.com
@@ -43,6 +42,6 @@ ImageCoords = mrAnatGetImageCoordsFromSn(SpatialNormalization, tal2mni(config.co
 % Now we assume that ImageCoords contains the AC-PC coordinates that we need for the Raw data. 
 % We will use them to compute the AC_PC alignement automatically. The new file will be saved to disk. 
 % Check the alignement.
-mrAnatAverageAcpcNifti(ni, config.t1_out, ImageCoords, [], [], [], false);
+mrAnatAverageAcpcNifti(ni, "t1_acpc_aligned.nii.gz", ImageCoords, [], [], [], false);
 
 return
