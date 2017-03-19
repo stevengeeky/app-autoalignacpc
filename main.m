@@ -46,6 +46,6 @@ ImageCoords = mrAnatGetImageCoordsFromSn(SpatialNormalization, tal2mni(coords)',
 % Now we assume that ImageCoords contains the AC-PC coordinates that we need for the Raw data. 
 % We will use them to compute the AC_PC alignement automatically. The new file will be saved to disk. 
 % Check the alignement.
-mrAnatAverageAcpcNifti(ni, 't1_acpc_aligned.nii.gz', ImageCoords, [], [], [], false);
+mrAnatAverageAcpcNifti(ni, 't1.nii.gz', ImageCoords, [], [], [], false);
 
 return
