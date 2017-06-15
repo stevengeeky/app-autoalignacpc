@@ -45,6 +45,11 @@ if [ -f jobid ]; then
     exit 2
 fi
 
+if [ -f pid ]; then
+    echo "assume to be running locally"
+    exit 0
+fi
+
 echo "can't determine the status!"
 exit 3
 
