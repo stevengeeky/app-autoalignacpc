@@ -7,16 +7,15 @@ function main( config )
 %
 % Copyright 2017 Franco Pestilli, Indiana University, frakkopesto@gmail.com
 
-if exist('/N/u/hayashis/BigRed2/git', 'dir') == 7
-    disp('loading karst/br2 paths')
+switch getenv('ENV')
+case 'IUHPC'
+    disp('loading paths (HPC)')
     addpath(genpath('/N/u/hayashis/BigRed2/git/vistasoft'))
     addpath(genpath('/N/u/hayashis/BigRed2/git/jsonlab'))
-end
-
-if exist('/root/git', 'dir') == 7
-    disp('loading jetstream paths')
-    addpath(genpath('/root/git/vistasoft'))
-    addpath(genpath('/root/git/jsonlab'))
+case 'VM'
+    disp('loading paths (VM)')
+    addpath(genpath('/usr/local/vistasoft'))
+    addpath(genpath('/usr/local/jsonlab'))
 end
 
 % load my own config.json

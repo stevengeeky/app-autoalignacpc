@@ -1,5 +1,5 @@
 {
-  "name": "sca-service-autoalignacpc",
+  "name": "app-autoalignacpc",
   "version": "1.0.0",
   "description": "auto align the t1 using triangle method",
   "directories": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/brain-life/sca-service-autoalignacpc"
+    "url": "https://github.com/brain-life/app-autoalignacpc"
   },
   "author": "Soichi Hayashi <hayashis@iu.edu>",
   "license": "ISC"
